@@ -21,7 +21,7 @@
 
 <body>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa-solid fa-circle-chevron-up"></i></button>
 
     <div class="intro">
         <div class="items">
@@ -49,15 +49,15 @@
         </div>
     </div>
 
-    <div class="who-am-i-wrapper">
-        <div class="who-am-i">
-            <h2>Who am i?</h2>
+    <div id="who-am-i" class="who-am-i-wrapper">
+        <div class="who-am-i reveal">
+            <h2>Who am I?</h2>
             <p>Hi! I'm Joa_sss and I'm a (primarily) Javascript developer from the Netherlands. I love coding and
                 playing
                 games, and you're on my portfolio site! If you want to know my full skills go to the <a
                     href="#skills">skills</a> section. Some quick facts about me:</p>
             <ul>
-                <li>I'm currently working on QuaBot, a multipurpose discord bot.</li>
+                <li>I'm currently working on QuaBot, a multipurpose Discord bot.</li>
                 <li>I like to game in my free time and when I'm bored.</li>
                 <li>I'm always looking to explore new things!</li>
                 <li>To reach me, DM me on discord: Joa_sss#0001</li>
@@ -66,20 +66,23 @@
     </div>
 
     <div class="languages" id="skills">
-        <h2>Languages</h2>
-        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/css3/css3-plain.svg"
-            title="CSS3" alt="CSS" width="60" height="60" />&nbsp;
-        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/html5/html5-original.svg"
-            title="HTML5" alt="HTML" width="60" height="60" />&nbsp;
-        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/javascript/javascript-original.svg"
-            title="JavaScript" alt="JavaScript" width="60" height="60" />&nbsp;
-        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/typescript/typescript-original.svg"
-            title="NodeJS" alt="NodeJS" width="60" height="60" />&nbsp;
-        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/python/python-original.svg"
-            title="NodeJS" alt="NodeJS" width="60" height="60" />&nbsp;
+        <div class="reveal">
+            <h2>Languages</h2>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/css3/css3-plain.svg"
+                title="CSS3" alt="CSS" width="60" height="60" />&nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/html5/html5-original.svg"
+                title="HTML5" alt="HTML" width="60" height="60" />&nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/javascript/javascript-original.svg"
+                title="JavaScript" alt="JavaScript" width="60" height="60" />&nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/typescript/typescript-original.svg"
+                title="NodeJS" alt="NodeJS" width="60" height="60" />&nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/python/python-original.svg"
+                title="NodeJS" alt="NodeJS" width="60" height="60" />&nbsp;
+        </div>
     </div>
 
     <div class="libraries">
+        <div class="reveal">
         <h2>Libraries & Tools</h2>
         <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/discordjs/discordjs-original.svg"
             title="Discord.JS" alt="Discord.JS" width="60" height="60" />&nbsp;
@@ -91,9 +94,10 @@
             title="NodeJS" alt="NodeJS" width="60" height="60" />&nbsp;
         <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/vscode/vscode-original.svg"
             title="VSCode" alt="VSCode" width="60" height="60" />&nbsp;
+        </div>
     </div>
     <div class="projects-wrapper">
-        <div class="projects">
+        <div class="projects reveal">
             <h2 style="text-align: center;">My Projects</h2>
             <h3><span><img src="./assets/img/quabot.png" width="25px"> QuaBot</span></h3>
             <!-- <img src="./assets/img/quabot.png" width="100px"> -->
@@ -101,7 +105,7 @@
             <ul>
                 <li>Written in Javascript, with discord.js.</li>
                 <li>Over 30+ commands and 5+ modules.</li>
-                <li>Logging, Reactionroles, applications and so much more.</li>
+                <li>Logging, reaction roles, applications and so much more.</li>
                 <li>30,000+ users & 75+ servers.</li>
             </ul>
 
@@ -112,9 +116,8 @@
 </body>
 
 <script>
-    mybutton = document.getElementById("myBtn");
+    mybutton = document.getElementById("topBtn");
 
-    // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
@@ -125,11 +128,28 @@
         }
     }
 
-    // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    } 
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 10;
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
+            }
+        }
+    }
+
+    window.addEventListener("scroll", reveal);
+
+    reveal();
 </script>
 
 
