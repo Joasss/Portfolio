@@ -111,6 +111,10 @@ a:hover {
     transform: perspective(999px) rotateX(7deg) translate3d(0px, -4px, 5px);
 }
 
+.badges img:hover {
+    transform: perspective(999px) rotateX(7deg) translate3d(0px, -4px, 5px);
+}
+
 .projects img {
     transition: 0.1s;
     float: right;
