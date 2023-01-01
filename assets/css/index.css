@@ -1,5 +1,5 @@
 html {
-    background-color: #f1f1f1;
+    background-color: white;
     font-family: 'Helvetica Now', 'Open Sans', Helvetica, Arial, sans-serif;
     font-weight: 200;
 }
@@ -56,7 +56,7 @@ a:hover {
 
 .who-am-i-wrapper {
     display: flex;
-    background-color: #eaf8ff;
+    background-color: white;
     border-bottom: 5px solid rgba(172, 172, 172, 0.36);
     justify-content: center;
 }
@@ -77,7 +77,7 @@ a:hover {
 .languages {
     margin-top: 0px;
     text-align: center;
-    background-color: #fffdf5;
+    background-color: white;
     padding: 20px 30px;
 }
 
@@ -97,7 +97,7 @@ a:hover {
 .libraries {
     margin-top: 0px;
     text-align: center;
-    background-color: #fffdf5;
+    background-color: white;
     padding: 20px 30px;
     border-bottom: 5px solid rgba(172, 172, 172, 0.36);
 }
@@ -107,16 +107,11 @@ a:hover {
     margin-top: 0px;
 }
 
-.projects img:hover {
-    transform: perspective(999px) rotateX(7deg) translate3d(0px, -4px, 5px);
-}
-
 .badges img:hover {
-    transform: perspective(999px) rotateX(7deg) translate3d(0px, -4px, 5px);
+    transform: perspective(999px) rotateX(7deg) translate3d(0px, -1px, 1px);
 }
 
 .projects img {
-    transition: 0.1s;
     float: right;
     margin: 5px;
 }
@@ -128,7 +123,7 @@ a:hover {
 }
 
 .projects-wrapper {
-    background-color: #f6f1fd;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
 }
@@ -176,10 +171,16 @@ a:hover {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
-    transition: 2s all ease;
+    transition: 1s all ease;
 }
 
 .reveal.active {
     transform: translateY(0);
     opacity: 1;
+}
+
+hr {
+    border: 0px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.11);
 }
