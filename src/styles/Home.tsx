@@ -8,7 +8,7 @@ export const HomeWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 106px;
+    min-height: calc(100vh - 120px - 56px - 40px);
 `;
 
 export const HomeLanguage = styled.h1`
@@ -58,7 +58,7 @@ export const HomeContactTitle = styled.div`
 `;
 
 export const HomeHeightWrapper = styled.div`
-    min-height: calc(100vh - 226px - 56px - 40px);
+    min-height: calc(100vh - 56px - 40px - 150px);
 `;
 
 export const HomeContactWrapper = styled.div`

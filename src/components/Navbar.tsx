@@ -12,7 +12,7 @@ export const Navbar = () => {
                 </NavbarTitle>
 
                 <NavbarLinks>
-                    <NavbarLink href="https://github.com/Joasss">Github</NavbarLink>
+                    <NavbarLink href="https://github.com/Joasss">GitHub</NavbarLink>
                     <NavbarLink href="https://quabot.net">QuaBot</NavbarLink>
                     <NavbarLink href="https://pasterboard.online">Pasterboard</NavbarLink>
 
