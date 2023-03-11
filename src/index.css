@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  background-color: #171717;
+
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+
+html,
+#root {
+  scroll-behavior: smooth;
+}
+
+.active {
+  color: white !important;
+}
