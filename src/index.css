@@ -1,7 +1,7 @@
 body {
   margin: 0;
   scroll-behavior: smooth;
-  background-color: #171717;
+  background-color: #000;
 
   font-family: 'Inter', sans-serif;
   color: white;
@@ -14,4 +14,8 @@ html,
 
 .active {
   color: white !important;
+}
+
+a {
+  color: #c383ff;
 }
