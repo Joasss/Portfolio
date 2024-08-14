@@ -1,0 +1,19 @@
+name: ⚠️ Deploy portfolio to PRODUCTION
+
+on:
+  workflow_dispatch
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the new Docker image
+      run: docker build . --file Dockerfile --build-arg="REST_ENV=stable" --tag joasss/portfolio:$(date +%s) --memory=500m
+    - name: Stopping existing frontend container
+      run: docker stop joasss-portfolio || echo
+    - name: Removing existing frontend container
+      run: docker rm joasss-portfolio || echo
+    - name: Running the container from this image
+      run: docker run --restart=always --name joasss-portfolio -p 1000:1000 -d $(docker images --filter "reference=joasss/portfolio" | awk '{print $3}' | awk 'NR==2')
