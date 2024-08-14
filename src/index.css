@@ -15,3 +15,7 @@ html,
 .active {
   color: white !important;
 }
+
+a {
+  color: #c383ff;
+}

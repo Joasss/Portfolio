@@ -1,13 +1,18 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const Tabs = styled.div`
     display: flex;
     align-items: center;
-    position: fixed;
-    bottom: 24px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0px auto;
+    width: fit-content;
+`;
+
+export const TabsWrapper = styled.div`
     margin: 0px;
+    position: fixed;
+    text-align: center;
+    bottom: 24px;
+    width: 100%;
 `;
 
 export const Tab = styled.div`
@@ -17,6 +22,11 @@ export const Tab = styled.div`
     border-radius: 38px;
     margin: 0px 20px;
     cursor: default;
+
+    @media (max-width: 500px) {
+        padding: 8px 20px;
+        margin: 0px 10px;
+    }
 `;
 
 export const TabButton = styled.div`

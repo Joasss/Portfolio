@@ -1,6 +1,8 @@
 import { ProjectsContainer } from "../styles/Projects"
 
 export const Projects = () => {
+    document.title = 'Projects | Joa_sss';
+
     return <div>
         <h1>Projects</h1>
         <ProjectsContainer>
@@ -18,7 +20,7 @@ export const Projects = () => {
                     <p>A platform for development projects.</p>
                 </div>
             </a>
-            <a href="https://quabot.dev#pb" target="_blank">
+            <a href="https://quabot.dev#pb" target="_blank" rel="noreferrer">
                 <img src="https://i.imgur.com/EpIvKOb.png" />
                 <div>
                     <b>Pasterboard</b>
