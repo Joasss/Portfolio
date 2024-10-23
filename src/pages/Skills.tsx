@@ -24,14 +24,14 @@ export const Skills = () => {
                 <img src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" />
                 <div>
                     <b>Express.JS</b>
-                    <ProgressBar progress={90}><div /></ProgressBar>
+                    <ProgressBar progress={80}><div /></ProgressBar>
                 </div>
             </div>
             <div>
                 <img src="https://github.com/devicons/devicon/raw/master/icons/mongodb/mongodb-original.svg" />
                 <div>
                     <b>MongoDB</b>
-                    <ProgressBar progress={80}><div /></ProgressBar>
+                    <ProgressBar progress={70}><div /></ProgressBar>
                 </div>
             </div>
             <div>

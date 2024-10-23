@@ -1,4 +1,5 @@
-import { ProjectsContainer } from "../styles/Projects"
+import { ProjectsContainer } from "../styles/Projects";
+import { MdOutlineContentPasteSearch } from "react-icons/md";
 
 export const Projects = () => {
     document.title = 'Projects | Joa_sss';
@@ -13,18 +14,25 @@ export const Projects = () => {
                     <p>A verified multipurpose Discord bot.</p>
                 </div>
             </a>
-            <a href="https://quabot.dev">
-                <img src="https://i.imgur.com/NCXQqFE.png" />
-                <div>
-                    <b>QuaBot Development</b>
-                    <p>A platform for development projects.</p>
-                </div>
-            </a>
             <a href="https://quabot.dev#pb" target="_blank" rel="noreferrer">
                 <img src="https://i.imgur.com/EpIvKOb.png" />
                 <div>
                     <b>Pasterboard</b>
                     <p>A forum to share your thoughts and feelings.</p>
+                </div>
+            </a>
+            <a href="https://snipvault.dev" target="_blank" rel="noreferrer">
+                <MdOutlineContentPasteSearch color="#a0d5fd" size={25} />
+                <div>
+                    <b>SnipVault</b>
+                    <p>An easy way to manage snippets of code.</p>
+                </div>
+            </a>
+            <a href="https://quabot.dev">
+                <img src="https://i.imgur.com/NCXQqFE.png" />
+                <div>
+                    <b>QuaBot Development</b>
+                    <p>A platform for development projects.</p>
                 </div>
             </a>
             <a href="https://github.com/Joasss/NeoPass">
