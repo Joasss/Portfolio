@@ -36,7 +36,7 @@ export const ProjectsContainer = styled.div`
             }
         }
 
-        img {
+        img , svg {
             border-radius: 10px;
             width: 40px;
             height: 40px;
